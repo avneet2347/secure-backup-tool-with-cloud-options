@@ -23,10 +23,6 @@ from PIL import Image, ImageTk
 
 import os
 
-# Instead of:
-# MEGA_EMAIL = "avneet2347@gmail.com"
-# MEGA_PASSWORD = "9809__avi@"
-
 # Use:
 MEGA_EMAIL = os.getenv('MEGA_EMAIL')
 MEGA_PASSWORD = os.getenv('MEGA_PASSWORD')
@@ -576,4 +572,5 @@ ttk.Label(login_window, text="Enter Password:").pack()
 password_entry = ttk.Entry(login_window, show="*", font=("Arial", 12))
 password_entry.pack(pady=10)
 ttk.Button(login_window, text="Login", command=check_login).pack(pady=10)
+
 login_window.mainloop()
